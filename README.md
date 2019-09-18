@@ -43,10 +43,10 @@ python manage.py runserver
 |---|---|---|---|
 |/members/|GET|Returns a list of members with their basic details|Anyone|
 |/members/|POST|Creates new member (POST data: username,password,first_ame,last_name,email|Anyone|
-|/members/<pk>/|GET|Returns specific member details|Logged specific member|
-|/members/<pk>/|PUT|Updates member details||Logged in specific member|
-|/members/<pk>/|PATCH|Partially updates member details||Logged in specific member|
-|/members/<pk>/|DELETE|Deletes member from database||Logged in specific member|
+|/members/pk/|GET|Returns specific member details|Logged specific member|
+|/members/pk/|PUT|Updates member details||Logged in specific member|
+|/members/pk/|PATCH|Partially updates member details||Logged in specific member|
+|/members/pk/|DELETE|Deletes member from database||Logged in specific member|
 |/groups/|GET|Displays list of public groups|Logged in members|
 |/groups/|POST|Creates a new group (POST data:)|Logged in members|
   
