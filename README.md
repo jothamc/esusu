@@ -1,4 +1,4 @@
-# esusu
+# Esusu
 
 This is a REST API for a Esusu Confam ltd. built using Django REST Framework
 The API is meant to do the following:
@@ -10,25 +10,27 @@ The API is meant to do the following:
 6. Enables an admin to see members of his group and how much they have saved on the group
 7. Enables members to pay the specified peroidic savings amount into their groups
 
-# Requirements
+## Requirements
 1. PC or Mac or Linux OS
 2. Python (3+)
 3. Pip
 
-# Setup
+## Setup
 Create a virtual environment to isolate our package dependencies locally
 `python3 -m venv env`
 `source env/bin/activate`
 On Windows use `env\Scripts\activate`
 
-# Install Django and django Rest framework into the virtual environment
-`pip install django
-pip install djangorestframework`
+Install Django and django Rest framework into the virtual environment
+```
+pip install django
+pip install djangorestframework
+```
 
-clone the git repo to the directory
+Clone the git repo to the directory
 
 Run Django server from the directory
-`python manage.py runserver`
+```python manage.py runserver```
 
 You're all set up
 
