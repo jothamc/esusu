@@ -29,11 +29,29 @@ pip install djangorestframework
 
 Clone the git repo to the directory
 
-Run Django server from the directory
-```python manage.py runserver```
+Make and apply migrations, then run Django server from the directory
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
 
-You're all set up
+
+## API Endpoints
+
+|URL|Request Method|Description|Access|
+|---|---|---|---|
+|/members/|GET|Returns a list of members with their basic details|Anyone|
+|/members/|POST|Creates new member (POST data: username,password,first_ame,last_name,email|Anyone|
+|/members/<pk>/|GET|Returns specific member details|Logged specific member|
+|/members/<pk>/|PUT|Updates member details||Logged in specific member|
+|/members/<pk>/|PATCH|Partially updates member details||Logged in specific member|
+|/members/<pk>/|DELETE|Deletes member from database||Logged in specific member|
+|/groups/|GET|Displays list of public groups|Logged in members|
+|/groups/|POST|Creates a new group (POST data:)|Logged in members|
+  
 
 
-Read API documentation
+
+
 API can also be accessed using djangorestframework's web browsable API
