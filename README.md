@@ -15,18 +15,20 @@ The API is meant to do the following:
 2. Python (3+)
 3. Pip
 
-# Create a virtual environment to isolate our package dependencies locally
-python3 -m venv env
-source env/bin/activate  # On Windows use `env\Scripts\activate`
+# Setup
+Create a virtual environment to isolate our package dependencies locally
+`python3 -m venv env`
+`source env/bin/activate`
+On Windows use `env\Scripts\activate`
 
 # Install Django and django Rest framework into the virtual environment
-pip install django
-pip install djangorestframework
+`pip install django
+pip install djangorestframework`
 
 clone the git repo to the directory
 
-run Django server from the directory
-python manage.py runserver
+Run Django server from the directory
+`python manage.py runserver`
 
 You're all set up
 
