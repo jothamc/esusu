@@ -9,3 +9,27 @@ The API is meant to do the following:
 5. Enable an admin to edit group information including members, maximum capacity, periodic savings amount, name, description and whether or not the group is searchable
 6. Enables an admin to see members of his group and how much they have saved on the group
 7. Enables members to pay the specified peroidic savings amount into their groups
+
+# Requirements
+1. PC or Mac or Linux OS
+2. Python (3+)
+3. Pip
+
+# Create a virtual environment to isolate our package dependencies locally
+python3 -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+
+# Install Django and django Rest framework into the virtual environment
+pip install django
+pip install djangorestframework
+
+clone the git repo to the directory
+
+run Django server from the directory
+python manage.py runserver
+
+You're all set up
+
+
+Read API documentation
+API can also be accessed using djangorestframework's web browsable API
