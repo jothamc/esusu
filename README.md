@@ -46,9 +46,9 @@ python manage.py runserver
 |/members/|GET|Returns a list of members with their basic details|Anyone|
 |/members/|POST|Creates new member (POST data: username,password,first_ame,last_name,email|Anyone|
 |/members/pk/|GET|Returns specific member details|Logged specific member|
-|/members/pk/|PUT|Updates member details||Logged in specific member|
-|/members/pk/|PATCH|Partially updates member details||Logged in specific member|
-|/members/pk/|DELETE|Deletes member from database||Logged in specific member|
+|/members/pk/|PUT|Updates member details||Logged in member|
+|/members/pk/|PATCH|Partially updates member details||Logged in member|
+|/members/pk/|DELETE|Deletes member from database||Logged in member|
 |/groups/|GET|Displays list of public groups|Logged in members|
 |/groups/|POST|Creates a new group (POST data: name,description,max_capacity,savings_amount,is_searchable)|Logged in members|
 |/groups/pk/|GET|Returns full details of the group|Group admin|
