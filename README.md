@@ -19,8 +19,10 @@ The API is meant to do the following:
 
 ## Setup
 Create a virtual environment to isolate our package dependencies locally
-`python3 -m venv env`
-`source env/bin/activate`
+```
+python3 -m venv env
+source env/bin/activate
+```
 On Windows use `env\Scripts\activate`
 
 Install Django and django Rest framework into the virtual environment
@@ -46,9 +48,9 @@ python manage.py runserver
 |/members/|GET|Returns a list of members with their basic details|Anyone|
 |/members/|POST|Creates new member (POST data: username,password,first_ame,last_name,email|Anyone|
 |/members/pk/|GET|Returns specific member details|Logged specific member|
-|/members/pk/|PUT|Updates member details||Logged in member|
-|/members/pk/|PATCH|Partially updates member details||Logged in member|
-|/members/pk/|DELETE|Deletes member from database||Logged in member|
+|/members/pk/|PUT|Updates member details|Logged in member|
+|/members/pk/|PATCH|Partially updates member details|Logged in member|
+|/members/pk/|DELETE|Deletes member from database|Logged in member|
 |/groups/|GET|Displays list of public groups|Logged in members|
 |/groups/|POST|Creates a new group (POST data: name,description,max_capacity,savings_amount,is_searchable)|Logged in members|
 |/groups/pk/|GET|Returns full details of the group|Group admin|
