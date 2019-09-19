@@ -8,7 +8,9 @@ The API is meant to do the following:
 4. Choose a random member of the group as receiver of contributions for the month
 5. Enable an admin to edit group information including members, maximum capacity, periodic savings amount, name, description and whether or not the group is searchable
 6. Enables an admin to see members of his group and how much they have saved on the group
-7. Enables members to pay the specified peroidic savings amount into their groups
+7. Enables members to pay the specified periodic savings amount into their groups
+8. Enable an admin to add a member to his group using the user's username
+9. Enable an admin to send out an invitation URL which when accessed by a logged-in member adds the member to the group
 
 ## Requirements
 1. PC or Mac or Linux OS
