@@ -48,8 +48,18 @@ python manage.py runserver
 |/members/pk/|PATCH|Partially updates member details||Logged in specific member|
 |/members/pk/|DELETE|Deletes member from database||Logged in specific member|
 |/groups/|GET|Displays list of public groups|Logged in members|
-|/groups/|POST|Creates a new group (POST data:)|Logged in members|
-  
+|/groups/|POST|Creates a new group (POST data: name,description,max_capacity,savings_amount,is_searchable)|Logged in members|
+|/groups/pk/|GET|Returns full details of the group|Group admin|
+|/groups/pk/|PUT|Updates group details|Group admin|
+|/groups/pk/|PATCH|Partially updates group details|Group admin|
+|/groups/pk/|DELETE|Deletes group from database|Group admin|
+|/groups/pk/payments/|GET|Returns all payments or member payment to group admin or member respectively|Group admin or logged in member|
+|/groups/pk/payments/|POST|Creates a new payment into the group, automatically adding relevant member details|Logged in group member|
+|/groups/pk/payments/username/|GET|Returns details of member's payment in group|Group admin or logged in member|
+|/groups/pk/payments/username/|PATCH|Increments payment amount using group's saving amount (No data should be sent)|Group admin or logged in member|
+|/groups/pk/payments/username/|DELETE|Deletes payment from database|Group admin or logged in member|
+|/groups/pk/add-username|PATCH|Adds member to the group using member's username|Group admin|
+|/groups/pk/invite-uuid/|PATCH|Add logged-in member to the group whose uuid is called|Logged-in member|
 
 
 
